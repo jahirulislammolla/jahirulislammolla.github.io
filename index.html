@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MD. Jahirul Islam — Portfolio</title>
+  <meta name="description" content="MD. Jahirul Islam — Full‑stack Web Developer (Laravel, Django, Vue, React)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50: '#f0f8ff',
+              100: '#e0f0ff',
+              200: '#bfe0ff',
+              300: '#8ec7ff',
+              400: '#57a7ff',
+              500: '#2f8fff',
+              600: '#0f72f0',
+              700: '#0b5bcc',
+              800: '#0e4aa3',
+              900: '#103f83',
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 3px rgba(47,143,255,0.25)',
+          },
+          keyframes: {
+            float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-6px)' } },
+            fadeInUp: { '0%': { opacity: 0, transform: 'translateY(14px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            fadeInUp: 'fadeInUp 0.6s ease 1 both',
+          }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    /* Subtle noise background */
+    .noise { background-image: radial-gradient(rgba(0,0,0,.06) 1px, transparent 1px), radial-gradient(rgba(0,0,0,.04) 1px, transparent 1px); background-size: 24px 24px, 12px 12px; background-position: 0 0, 6px 6px; }
+  </style>
+  <!-- SEO / Social -->
+  <meta property="og:title" content="MD. Jahirul Islam — Portfolio" />
+  <meta property="og:description" content="Full‑stack Web Developer | Laravel • Django • Vue • React" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/0?v=4" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "MD. Jahirul Islam",
+      "jobTitle": "Full‑stack Web Developer",
+      "email": "mailto:jahirul.iit5th@gmail.com",
+      "telephone": "+8801893309078",
+      "url": "https://jahirulislammolla.github.io/",
+      "sameAs": [
+        "https://github.com/jahirulislammolla",
+        "https://meta.stackoverflow.com/users/7386944/jahirul-islam"
+      ]
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-neutral-950 dark:text-neutral-100 font-sans selection:bg-brand-200 selection:text-brand-900">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-neutral-950/60 border-b border-black/5 dark:border-white/5">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-extrabold tracking-tight text-lg">Jahirul<span class="text-brand-600">.dev</span></a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-brand-600">About</a>
+        <a href="#skills" class="hover:text-brand-600">Skills</a>
+        <a href="#experience" class="hover:text-brand-600">Experience</a>
+        <a href="#projects" class="hover:text-brand-600">Projects</a>
+        <a href="#education" class="hover:text-brand-600">Education</a>
+        <a href="#contact" class="hover:text-brand-600">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a id="resumeLink" class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-xl border border-black/10 dark:border-white/10 hover:shadow-glow transition" href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+        <button id="themeToggle" aria-label="Toggle theme" class="p-2 rounded-xl border border-black/10 dark:border-white/10 hover:shadow-glow transition">
+          <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M21.64 13.65A9 9 0 1110.35 2.36a7 7 0 1011.29 11.29z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full bg-gradient-to-br from-brand-300/50 to-brand-600/30 blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-24 w-[520px] h-[520px] rounded-full bg-gradient-to-tr from-rose-300/30 to-indigo-400/20 blur-3xl"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 noise">
+      <div class="grid md:grid-cols-2 items-center gap-10">
+        <div class="relative z-10 animate-fadeInUp">
+          <p class="text-sm uppercase tracking-[0.2em] text-gray-600 dark:text-gray-300">Full‑stack Web Developer</p>
+          <h1 class="mt-3 text-4xl md:text-6xl font-extrabold leading-tight">
+            MD. Jahirul Islam
+          </h1>
+          <p class="mt-4 text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-xl">
+            4+ years of experience building robust web apps with <span class="font-semibold">Laravel</span>, <span class="font-semibold">Django</span>, <span class="font-semibold">Vue</span>, <span class="font-semibold">React</span>, and modern SQL databases.
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow focus:outline-none focus:ring-2 focus:ring-brand-400" href="#projects">View Projects</a>
+            <a class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-black/10 dark:border-white/10 hover:shadow-glow" href="https://github.com/jahirulislammolla" target="_blank" rel="noopener">GitHub</a>
+            <a class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-black/10 dark:border-white/10 hover:shadow-glow" href="mailto:jahirul.iit5th@gmail.com">Contact</a>
+          </div>
+        </div>
+        <div class="relative z-10 md:justify-self-end animate-float">
+          <div class="w-56 h-56 md:w-64 md:h-64 rounded-3xl bg-gradient-to-br from-white to-gray-50 dark:from-neutral-900 dark:to-neutral-800 border border-black/5 dark:border-white/5 shadow-xl flex items-center justify-center overflow-hidden">
+            <span class="text-7xl">👨‍💻</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">About</h2>
+          <p class="mt-3 text-gray-600 dark:text-gray-300">Hi! I’m Jahirul — a developer who enjoys turning complex ideas into clean, performant products. I focus on backend APIs and modern frontends, with a keen eye on DX, testing, and deployment.</p>
+        </div>
+        <div class="md:col-span-2 grid sm:grid-cols-2 gap-4">
+          <div class="p-4 rounded-2xl border border-black/10 dark:border-white/10">
+            <div class="text-xs uppercase text-gray-500">Email</div>
+            <a class="block mt-1 font-medium hover:text-brand-600" href="mailto:jahirul.iit5th@gmail.com">jahirul.iit5th@gmail.com</a>
+          </div>
+          <div class="p-4 rounded-2xl border border-black/10 dark:border-white/10">
+            <div class="text-xs uppercase text-gray-500">Phone</div>
+            <a class="block mt-1 font-medium hover:text-brand-600" href="tel:+8801893309078">+88 01893-309078</a>
+          </div>
+          <div class="p-4 rounded-2xl border border-black/10 dark:border-white/10">
+            <div class="text-xs uppercase text-gray-500">GitHub</div>
+            <a class="block mt-1 font-medium hover:text-brand-600" target="_blank" rel="noopener" href="https://github.com/jahirulislammolla">@jahirulislammolla</a>
+          </div>
+          <div class="p-4 rounded-2xl border border-black/10 dark:border-white/10">
+            <div class="text-xs uppercase text-gray-500">StackOverflow</div>
+            <a class="block mt-1 font-medium hover:text-brand-600" target="_blank" rel="noopener" href="https://meta.stackoverflow.com/users/7386944/jahirul-islam">Jahirul Islam</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 md:py-24 bg-gray-50 dark:bg-neutral-900/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Skills</h2>
+      <p class="mt-3 text-gray-600 dark:text-gray-300 max-w-2xl">Languages: PHP, Python, JavaScript, SQL, C, Java. Frameworks: Laravel, Django/DRF, Vue, React. DB: MySQL, PostgreSQL. Tools: Git, AWS (EC2, S3), Vercel, Heroku, Cpanel, Tailwind.</p>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="p-4 rounded-2xl border border-black/10 dark:border-white/10"><span class="font-semibold">Backend:</span> Laravel, Django/DRF</div>
+        <div class="p-4 rounded-2xl border border-black/10 dark:border-white/10"><span class="font-semibold">Frontend:</span> Vue 3, React</div>
+        <div class="p-4 rounded-2xl border border-black/10 dark:border-white/10"><span class="font-semibold">Databases:</span> MySQL, PostgreSQL</div>
+        <div class="p-4 rounded-2xl border border-black/10 dark:border-white/10"><span class="font-semibold">DevOps:</span> GitHub, AWS EC2/S3, Vercel</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Experience</h2>
+      <ol class="relative border-s mt-6 space-y-10 border-black/10 dark:border-white/10">
+        <li class="ps-6">
+          <span class="absolute -start-2.5 mt-1.5 size-4 rounded-full bg-brand-600"></span>
+          <h3 class="font-semibold">Senior Web Developer — Digit Gate IT <span class="text-sm text-gray-500">(Sep 2022 — Present)</span></h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Lead development across Laravel + Vue stacks, architecting REST APIs, authentication, and AWS deployments.</p>
+        </li>
+        <li class="ps-6">
+          <span class="absolute -start-2.5 mt-1.5 size-4 rounded-full bg-brand-600"></span>
+          <h3 class="font-semibold">Web Developer — Tech Park IT <span class="text-sm text-gray-500">(Jan 2022 — Aug 2022)</span></h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Built production features with Laravel/Django, optimized queries, and improved UX with Tailwind components.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Projects (auto from GitHub) -->
+  <section id="projects" class="py-16 md:py-24 bg-gray-50 dark:bg-neutral-900/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Projects</h2>
+          <p class="mt-3 text-gray-600 dark:text-gray-300">Latest public repositories from GitHub (top starred).</p>
+        </div>
+        <a class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-black/10 dark:border-white/10 hover:shadow-glow" href="https://github.com/jahirulislammolla?tab=repositories" target="_blank" rel="noopener">See all →</a>
+      </div>
+      <div id="repoGrid" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Education</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <div class="p-5 rounded-2xl border border-black/10 dark:border-white/10">
+          <h3 class="font-semibold">Jahangirnagar University</h3>
+          <p class="text-gray-600 dark:text-gray-300">B.Sc & M.Sc, Institute of Information Technology</p>
+          <p class="text-sm text-gray-500">CGPA: 3.62 & 3.50</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="rounded-3xl p-8 md:p-10 border border-black/10 dark:border-white/10 bg-white/70 dark:bg-neutral-900/70 backdrop-blur">
+        <h2 class="text-2xl md:text-3xl font-extrabold">Let’s work together</h2>
+        <p class="mt-3 text-gray-600 dark:text-gray-300">Email me about roles, freelance, or collaborations. I’ll reply within 24–48 hours.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow" href="mailto:jahirul.iit5th@gmail.com">Email Me</a>
+          <a class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-black/10 dark:border-white/10" href="https://github.com/jahirulislammolla" target="_blank" rel="noopener">GitHub</a>
+          <a class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-black/10 dark:border-white/10" href="https://meta.stackoverflow.com/users/7386944/jahirul-islam" target="_blank" rel="noopener">StackOverflow</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-black/5 dark:border-white/5 text-center text-sm text-gray-500">
+    © <span id="year"></span> MD. Jahirul Islam. Built with Tailwind. Deployed on GitHub Pages.
+  </footer>
+
+  <script>
+    // -------- Theme toggle --------
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const root = document.documentElement;
+    const setTheme = (mode) => {
+      if (mode === 'dark') {
+        root.classList.add('dark');
+      } else {
+        root.classList.remove('dark');
+      }
+      localStorage.setItem('theme', mode);
+    };
+    const current = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    setTheme(current);
+    themeToggle.addEventListener('click', () => setTheme(root.classList.contains('dark') ? 'light' : 'dark'));
+
+    // -------- Year --------
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // -------- GitHub repos --------
+    const USER = 'jahirulislammolla';
+    async function loadRepos() {
+      const grid = document.getElementById('repoGrid');
+      try {
+        const res = await fetch(`https://api.github.com/users/${USER}/repos?per_page=100&sort=updated`);
+        const data = await res.json();
+        if (!Array.isArray(data)) throw new Error('Unexpected response');
+        const sorted = data
+          .filter(r => !r.fork)
+          .sort((a,b) => (b.stargazers_count||0) - (a.stargazers_count||0))
+          .slice(0, 6);
+        if (sorted.length === 0) {
+          grid.innerHTML = '<p class="text-gray-600 dark:text-gray-300">No public repositories yet. Check back soon!</p>';
+          return;
+        }
+        grid.innerHTML = sorted.map(r => `
+          <a href="${r.html_url}" target="_blank" rel="noopener" class="group p-5 rounded-2xl border border-black/10 dark:border-white/10 bg-white/60 dark:bg-neutral-900/60 hover:shadow-lg transition block">
+            <div class="flex items-center justify-between gap-2">
+              <h3 class="font-semibold group-hover:text-brand-600">${r.name}</h3>
+              <span class="text-xs px-2 py-1 rounded-full bg-black/5 dark:bg-white/10">★ ${r.stargazers_count}</span>
+            </div>
+            <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">${r.description ?? 'No description provided.'}</p>
+            <div class="mt-3 flex items-center gap-3 text-xs text-gray-500">
+              <span>${r.language ?? 'N/A'}</span>
+              <span>• Updated: ${new Date(r.updated_at).toLocaleDateString()}</span>
+            </div>
+          </a>
+        `).join('');
+      } catch (e) {
+        grid.innerHTML = '<p class="text-red-600">Failed to load repositories.</p>';
+      }
+    }
+    loadRepos();
+  </script>
+</body>
+</html>
